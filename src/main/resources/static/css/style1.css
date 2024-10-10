@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+}
+
+.user_chat_data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.profile_name {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.incoming_msg, .outgoing_msg {
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.incoming_msg {
+    align-self: flex-start;
+    float: left;
+}
+
+.outgoing_msg {
+    align-self: flex-end;
+    float: right;
+}
+
+
+
+.received_width_msg p, .sent_msg p, .received_msg p {
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px;
+    word-wrap: break-word;
+    min-width: 5px;
+    text-align: left; /* 새로 추가 */
+    display: inline-block; /* 새로 추가 */
+    margin-bottom: 0; /* 시간 표시가 더 가까워지도록 조정 */
+}
+
+.received_width_msg p {
+    background: #ebebeb;
+    color: #646464;
+}
+
+.sent_msg p {
+    background: #050f8f;
+    color: #fff;
+}
+
+.received_msg p {
+    background: #ebebeb;
+    color: #646464;
+}
+.time_date {
+    color: #747474;
+    font-size: 10px;
+    margin-top: 2px;
+    display: inline-block; /* 메시지 옆에 정렬 */
+    margin-left: 2px; /* 메시지와 시간 사이의 간격 */
+    vertical-align: bottom; /* 메시지의 하단에 시간 정렬 */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container input[type="button"] {
+    padding: 10px 20px;
+    background-color: #050f8f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logoutBtn {
+    padding: 5px 10px;
+    background-color: #050f8f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>채팅방 생성</h1>
+<form th:action="@{/createChatRoom}" method="post">
+    <input type="text" id="chatRoomNm" name="chatRoomNm" placeholder="채팅방 제목을 입력하세요." required>
+    <input type="submit" id="createRoom" value="방 생성">
+</form>
+
+</body>
+</html>

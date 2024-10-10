@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="create-room-section">
+    <input type="button" value="Create Room" onclick="location.href='/createChatRoom'">
+</div>
+<h1>Main</h1>
+<div id="chatRoomList">
+    <h2>Chat Rooms</h2>
+    <table border="1">
+        <tr>
+            <th>Chat Room</th>
+            <th>입장</th>
+        </tr>
+        <tr th:each="chatRoom : ${chatList}">
+            <td>
+                <p th:href="@{'/chat/' + ${chatRoom.chatRoomId}}" th:text="${chatRoom.chatRoomNm}">Chat Room</p>
+            </td>
+            <td>
+                <a th:href="@{'/chat/' + ${chatRoom.chatRoomId}}">입장</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<ul>
+</ul>
+</body>
+</html>

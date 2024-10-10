@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Login</h1>
+<form th:action="@{/login}" method="post" id="login">
+    <input type="text" id="userNm" name="userNm" placeholder="아이디를 입력하세요">
+    <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요">
+    <input type="submit" id="loginSumbit" value="로그인">
+</form>
+</body>
+</html>

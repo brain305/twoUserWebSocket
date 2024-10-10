@@ -1,0 +1,192 @@
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+
+/* 메시지 스타일 */
+.incoming_msg, .outgoing_msg {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* 하단 입력창 스타일 */
+.fixed-bottom {
+    background-color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#message {
+    width: 80%;
+    padding: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+}
+
+.user {
+    border-bottom: 1px solid #716d6d;
+    padding: 10px;
+    width: 95%;
+}
+
+/* 채팅 창과 입력 창을 포함하는 컨테이너 */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 20px); /* 상단 여백 고려 */
+}
+
+/* 채팅 메시지 목록 */
+#chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* 입력창 */
+.input-container {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+
+.input-container input[type="text"] {
+    flex: 1; /* 입력 필드가 가능한 넓게 설정됨 */
+    padding: 10px;
+}
+
+.input-container input[type="button"] {
+    padding: 10px 20px;
+}
+
+.user_data {
+    background-color: #f8f9fa !important;
+    border-top: 5px solid #716d6d;
+    max-height: calc(100vh);
+
+}
+
+.profile_name {
+    background-color: #f8f9fa !important;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 5px solid #716d6d;
+}
+
+
+.user a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+.user a {
+    color: #212529;
+}
+
+.chat_section {
+    padding-top: 15px;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+}
+
+.received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received_width_msg p {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #646464;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 10px;
+    margin: 8px 0 0;
+}
+
+.received_width_msg {
+    width: 57%;
+}
+
+.mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 60%;
+}
+
+.sent_msg p {
+    background: #050f8f none repeat scroll 0 0;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+}
+
+.outgoing_msg {
+    overflow: hidden;
+    justify-content: flex-end;
+    margin: 26px 0 26px;
+}
+
+.sent_msg {
+    float: right;
+    width: 60%;
+}
+
+.input_msg_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+    padding: 10px;
+}
+
+.type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+}
+
+.msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+}
+
+.messaging {
+    padding: 0 0 50px 0;
+}
+
+.msg_history {
+    height: 516px;
+    overflow-y: auto;
+}
